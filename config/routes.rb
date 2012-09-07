@@ -8,6 +8,8 @@ SampleApp::Application.routes.draw do
   match '/about',   to: 'static_page#about'
   match '/contact', to: 'static_page#contact'
 
+  resources :users
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
